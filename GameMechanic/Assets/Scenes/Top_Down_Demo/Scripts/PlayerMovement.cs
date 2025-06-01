@@ -79,7 +79,10 @@ public class PlayerMovement : MonoBehaviour
         movement = movement.normalized;
 
         // SlowMotion function called to handle slow motion input and meter
-        SlowMotion();
+        if (Time.timeScale != 0f)
+        { 
+            SlowMotion();
+        }
 
         // Check if the player has been hit 5 times
         if (PlayerMovement.hitCount >= 5)
