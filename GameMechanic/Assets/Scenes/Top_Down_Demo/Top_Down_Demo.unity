@@ -834,6 +834,7 @@ MonoBehaviour:
   player: {fileID: 1536797455}
   swingAngle: 180
   swingDuration: 0.2
+  test: 0
 --- !u!61 &824034059
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1379,7 +1380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1425,8 +1426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc312147c972714fa9d21965bd4ed14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 0
-  test2: 0
   menu: {fileID: 1008245261}
 --- !u!1 &1536797453 stripped
 GameObject:
@@ -1451,10 +1450,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  slowMoMax: 3
+  slowMoTime: 3
   slowMoRechargeRate: 1
   slowMoDepleteRate: 1
   slowMoBar: {fileID: 1219954325}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1734834947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1779,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1477814237}
     m_Modifications:
+    - target: {fileID: 98083506879516273, guid: 6138d7765e48aeb42ad5d0aa299b12bd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1375
+      objectReference: {fileID: 0}
+    - target: {fileID: 98083506879516273, guid: 6138d7765e48aeb42ad5d0aa299b12bd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.325
+      objectReference: {fileID: 0}
     - target: {fileID: 3922553039123794765, guid: 6138d7765e48aeb42ad5d0aa299b12bd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
